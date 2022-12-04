@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contato - Kokodrilos DV</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_contato.css">
+</head>
+
+<body>
+    <header>
+        <div class="lim_cabecalho">
+            <h1><img class="banner" src="banner.png" alt="Logo da Kokodrilos"></h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nome_e_sobrenome">Nome e Sobrenome</label>
+            <input class="input_padrao" type="text" id="nome_e_sobrenome" required>
+
+            <label for="email">E-mail</label>
+            <input class="input_padrao" type="email" id="email" required 
+            placeholder="seuemail@dominico.com">
+
+            <label for="telefone">Telefone</label>
+            <input class="input_padrao" type="tel" id="telefone" required 
+            placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea class="input_padrao" cols="60" rows="10" id="mensagem" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio_email"><input type="radio" name="contato" 
+                    value="email" id="radio_email">
+                    E-mail</label>
+
+                <label for="radio_telefone"><input type="radio" name="contato" 
+                    value="telefone" id="radio_telefone">
+                    Telefone</label>
+
+                <label for="radio_whatsapp"><input type="radio" name="contato" 
+                    value="whatsapp" id="radio_whatsapp" checked>
+                    WhatsApp</label>
+            </fieldset>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>
+                Gostaria de receber nossas informações por e-mail?</label>
+
+            <input class="enviar" type="submit" value="Enviar Formulário">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>    
+                <tr>
+                    <td>Segunda-Feira</td>
+                    <td>8hrs ~ 20hrs</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td>
+                    <td>8hrs ~ 20hrs</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td>
+                    <td>8hrs ~ 17hrs</td>
+                </tr>
+            </tbody>    
+        </table>
+    </main>
+
+    <footer>
+        <img class="imagem_rodape" src="alligators.png" alt="Logo da Kokodrilos">
+        <p class="texto_copyrigth">&copy; Copyright Kokodrilos S/A</p>
+    </footer>
+
+</body>
+
+</html>
